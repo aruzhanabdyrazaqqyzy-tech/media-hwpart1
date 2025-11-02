@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Base Apparel Coming Soon</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      background-color: #fff6f5;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      max-width: 900px;
+      background-color: #fff;
+    }
+
+    .image {
+      flex: 1;
+      width: 30%;
+      object-fit: cover;
+    }
+
+    .text {
+      flex: 1;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 60px;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #2c1a0f;
+      margin-bottom: 20px;
+
+    }
+
+    p {
+      color: hsl(0, 36%, 70%);
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
+
+    .input-box {
+      display: flex;
+      align-items: center;
+      border: 1px solid #f3c8bd;
+      border-radius: 30px;
+      overflow: hidden;
+      width: 100%;
+      max-width: 350px;
+    }
+
+    .input-box input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 15px 20px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .arrow {
+      background: linear-gradient(135deg, #f8b3a0, #e78b7b);
+      padding: 15px 25px;
+      border: none;
+      cursor: pointer;
+      border-radius: 30px;
+    }
+
+    span {
+      color: hsl(0, 36%, 70%);
+      font-weight: lighter;
+    }
+    @media  screen and (max-width:680px){
+      body{
+        align-items: flex-start;
+        padding: 0;
+        min-height: 100hv;
+      }
+      .container{
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
+        text-align: center;
+      }
+      h1{
+       font-size: 70px;
+       letter-spacing: 0.1cm;
+      }
+      .images{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="text">
+      <img src="./images/logo.svg" class="logo" alt="Logo" />
+      <h1><span>WE'RE</span> <br> COMING <br> SOON</h1>
+      <p>
+        Hello fellow shoppers! We're currently building our new <br>
+        fashion store. Add your email below to stay up-to-date with <br>
+        announcements and our launch deals.
+      </p>
+
+      <div class="input-box">
+        <input type="text" placeholder="Email Address" />
+        <img src="./images/icon-arrow.svg" class="arrow" alt="arrow">
+      </div>
+    </div>
+
+    <img src="./images/hero-desktop.jpg" class="image" alt="Model">
+  </div>
+</body>
+
+</html>
